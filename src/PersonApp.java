@@ -1,9 +1,6 @@
 public class PersonApp {
     public static void main(String[] args) {
-        var person1 = new Person();
-        person1.name = "David";
-        person1.address = "Bekasi";
-        // person1.country= "ID";
+        var person1 = new Person("David", "Bekasi");
 
         System.out.println(person1.name);
         System.out.println(person1.address);
@@ -11,8 +8,11 @@ public class PersonApp {
 
         person1.sayHello("John");
 
-        Person person2 = new Person();
+        Person person2 = new Person("Jane");
+
         Person person3;
         person3 = new Person();
+        person3.name = "Josh";
+        person3.sayHello("Jen");
     }
 }
